@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, rgb(136, 12, 88), rgb(138, 36, 197));
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.resume {
+  width: 800px;
+  background: #fff;
+  margin: 25px auto;
+  display: flex;
+}
+
+.resume .resume_left {
+  width: 280px;
+  background: lightpink;
+  padding: 0 20px;
+}
+
+.resume .resume_left .resume_profile {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume .resume_left .resume_profile img {
+  width: 200px;
+  border-radius: 30px;
+  padding-top: 5px;
+}
+
+.pb{
+  padding-bottom: 10px;
+}
+
+.resume .resume_left .resume_content {
+  padding: 0 25px;
+}
+
+.resume .title {
+  margin-bottom: 20px;
+  color: rgb(74, 33, 87);
+}
+
+.resume .resume_left .regular {
+  color: #4c3b6b;
+}
+
+.resume .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #b1eaff;
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume_left .resume_info .title{
+  padding-bottom: 20px;
+  border-bottom: 2px solid #b1eaff; 
+}
+
+.resume .resume_left .resume_contact .title,
+.resume .resume_left .resume_skills .title,
+.resume .resume_left .resume_social .title,
+.resume .resume_left .resume_language .title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding-bottom: 10px;
+  color: rgb(7, 7, 70);
+  position: relative;
+  text-align: right;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #b1eaff;
+  padding-top: 0px;
+}
+
+.resume .resume_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume .resume_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume .resume_left ul li .icon {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 15px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: plum;
+  font-size: 30px;
+  left: -10px;
+}
+
+.resume .resume_left .resume_social ul li .icon {
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 20px;  
+
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data{
+  width: calc(100%-50px);
+  word-break: break-word;
+  color: rgb(14, 42, 58);
+  font-size: 15px;
+  font-weight: 600px;
+}
+
+.resume .resume_skills ul li {
+  font-display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.resume .resume_left ul li .skill_name {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:lightblue;
+  margin-top: 5px;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress,
+.resume .resume_left .resume_language ul li .language_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #fff;
+  position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_per,
+.resume .resume_left .resume_language ul li .language_per  {
+  width: 15%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span,
+.resume .resume_left .resume_language ul li .language_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background:  palevioletred;
+}
+
+.resume .resume_right {
+  width: 520px;
+  background: rgb(252, 241, 225);
+  padding: 25px;
+}
+
+.resume .resume_right ul li {
+  position: relative;
+}
+
+.resume .resume_right .semi-bold {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+
+.resume .resume_right .resume_about{
+  background: lightpink;
+  padding: 10px 20px;
+  padding-left: 10px;
+  height: 260px;
+  color:rgb(7, 7, 70);
+  width: 490px;
+  line-height: 26px;
+  position: relative;
+}
+
+.resume .resume_right .resume_about .title,
+.resume .resume_right .resume_training .title,
+.resume .resume_right .resume_education .title,
+.resume .resume_right .resume_certifications .title,
+.resume .resume_right .resume_Projects .title,
+.resume .resume_right .resume_hobby .title{
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding-bottom: 10px;
+  color: rgb(31, 31, 116);
+  position: relative;
+  text-align: right;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #b1eaff;
+}
+
+.resume .resume_right .resume_education {
+  margin-top: 30px;
+}
+
+.resume .resume_right ul li .heading {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_right .resume_certifications {
+  margin-bottom: 30px;
+}
+
+.resume .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume_right .resume_training ul li:before,
+.resume .resume_right .resume_education ul li:before,
+.resume .resume_right .resume_certifications li:before,
+.resume .resume_right .resume_Projects li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -14px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: plum;
+  border: 2px solid palevioletred;
+}
+
+.resume .resume_right .resume_training ul li:after,
+.resume .resume_right .resume_education ul li:after,
+.resume .resume_right .resume_certifications li:after,
+.resume .resume_right .resume_Projects li:after  {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -10px;
+  width: 2px;
+  height: 25px;
+  background: palevioletred;
+}
+
+.resume .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid palevioletred;
+  border-radius: 50%;
+  position: relative;
+  color: plum;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+  font-size: 30px;
+}
+
+.resume .resume_right .resume_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: plum;
+}
+
+.resume .resume_right .resume_hobby ul li:last-child:before {
+  display: none;
+}
+
+
+
+
